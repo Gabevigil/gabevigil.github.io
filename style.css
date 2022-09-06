@@ -37,6 +37,14 @@ header {
     display: block;
     float: right;
 }
+
+#socials2 {
+    padding-top: 2.5%;
+    padding-right: 4.5%;
+    display: block;
+    float: right;
+}
+
 #about {
     position: relative;
     top: -4.5vh;
@@ -44,6 +52,7 @@ header {
     display: block;
     float: right;
 }
+
 @media (min-width: 1001px) {
   p { font-size: 1rem; }
   h1 { font-size: 2.0rem; }
@@ -64,6 +73,10 @@ header {
         width: 25%;
         height: 25%;
     }
+    #socials2 {
+        width: 20%;
+        height: 20%;
+    }
     #about {
         width: 20%;
         height: 20%;
@@ -79,6 +92,10 @@ header {
     #socials {
         width: 15%;
         height: 15%;
+    }
+    #socials2 {
+        width: 12%;
+        height: 12%;
     }
     #about {
         width: 12%;
@@ -105,7 +122,126 @@ nav ul li {
 h1 {
     padding-top: .25em;
 }
-#main {
+@media (max-width: 800px) {
+    #cont {
+        flex-direction: column
+    }
+    #pfp {
+        width: 50%;
+    }
+    #textbox {
+        padding-top: 10%;
+        order: 2;
+    }
+}
+@media (min-width: 800px) {
+    #cont {
+        
+    }
+    #pfp {
+        width: 100%;
+    }
+}
+#cont {
+
+    outline-offset: 13px;
+    margin-right: 18%;
+    margin-left: 18%;
+    margin-top: 8%;
+    display: flex;
+    text-align: center;
+}
+#buttonbox {
+    display: flex;
+    text-align: center;
+    margin-right: 18%;
+    margin-left: 18%;
+    margin-top: 8%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#buttonbox p {
+    cursor: auto;
+    text-decoration: none;
+    backface-visibility: hidden;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    background: rgba(100%,100%,100%,0);
+    border-radius: 0px;
+    border: 1px solid #ffffff;
+    border-width: 1px 1px 1px 1px;
+    padding: 9px 9px 9px 9px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    font-family: Josefin Sans;
+    text-align: center;
+}
+#fbutton {
+    cursor: pointer;
+    text-decoration: none;
+    backface-visibility: hidden;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    background: rgba(100%,100%,100%,0);
+    border-radius: 0px;
+    border: 1px solid #ffffff;
+    border-width: 1px 1px 1px 1px;
+    padding: 9px 9px 9px 9px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    font-family: Josefin Sans;
+    text-align: center;
+}
+#fbutton:hover {
+    font-size: 0;
+}
+#fbutton:hover:after{
+    content: attr(data-hover);
+    font-size: 18px;
+}
+
+button {
+cursor: pointer;
+backface-visibility: hidden;
+position: relative;
+display: inline-block;
+white-space: nowrap;
+background: rgba(100%,100%,100%,0);
+border-radius: 0px;
+border: 1px solid #ffffff;
+border-width: 1px 1px 1px 1px;
+padding: 9px 9px 9px 9px;
+color: #ffffff;
+font-size: 18px;
+margin: 15px;
+font-family: Josefin Sans;
+text-align: center;
+}
+#main div {
+   
+}
+#textbox p {
+    margin-bottom: 18px;
+    text-align: left;
+}
+#pfp {
+    display: block;
+    outline: 2px solid #FFFFFF;
+    border-radius:50%;
+    outline-offset: 3px;
+
+}
+#imagebox {
+    padding: 1%;
+}
+#textbox {
+}
+main {
     text-align: center;
 }
 .iframe-container {
@@ -165,7 +301,7 @@ h1 {
     left: 51.03%;
 }*/
 .back-video {
-    position: absolute;
+    position: fixed;
     right: 0; 
     bottom: 0;
     z-index: -1;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Socials</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="hero">
+		<video autoplay loop muted play-inline class="back-video">
+			<source src="static.mp4" type="video/mp4">
+		</video>
+		<header>
+			<div id = "tabs">
+			<a href="index.html"><img id = "name" src="name.gif" alt="Gabe Vigil"></a>
+			<a href="about.html"><img id = "socials2" src="about.gif" alt="To About"><br></a>
+			<a href="index.html"><img id = "about" src="reels.gif" alt="To Reels"></a>
+			</div>
+		</header>
+		<main>
+			<div id = "buttonbox">
+				<button onclick="window.location.href='https://www.instagram.com/luxecide/';"type="button">INSTAGRAM</button>
+				<div id = "fbutton" onclick="copyEmail()" data-hover="gav273@nyu.edu">EMAIL</div>
+				<button onclick="window.location.href='https://www.youtube.com/channel/UCeSJHNPXI-hLQ8bq8bWAUeA';"type="button">YOUTUBE</button>
+			</div>
+		</main>
+	</div>
+</body>
+<script type="text/javascript">
+	function copyEmail() {
+		navigator.clipboard.writeText
+    	("gav273@nyu.edu");
+    	alert("Email copied!")
+    }
+</script>
+</html>
