@@ -47,10 +47,21 @@ header {
 
 #about {
     position: relative;
-    top: -4.5vh;
     padding-right: 4.5%;
     display: block;
     float: right;
+}
+
+@media (max-width: 500px) {
+    #about {
+        top: -2.5vh;
+    }
+}
+
+@media (min-width: 500px) {
+    #about {
+        top: -4.5vh;
+    }
 }
 
 @media (min-width: 1001px) {
