@@ -485,10 +485,11 @@ main {
     margin: 0;
 }
 .bn1 {
-    padding-left: 7.5vw;
+    margin-left: 7.5vw;
     float: left;
     width: 100px;
     line-height: 20px;
+
 }
 .bn1s {
     padding-top: 8px;
@@ -498,7 +499,7 @@ main {
     text-underline-offset: 4px;
 }
 .bn2 {
-    padding-left: 10vw;
+    padding-left: 5vw;
     float: left;
     width: 175px;
     line-height: 18px;

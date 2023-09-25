@@ -546,7 +546,7 @@ main {
     margin: 0;
 }
 .bn1 {
-    padding-left: 7.5vw;
+    margin-left: 7.5vw;
     float: left;
     width: 100px;
     line-height: 20px;
@@ -574,7 +574,8 @@ main {
 .bottomnav {
     padding-top: 5.7vw;
     font-size: 1em;
-    color: #F5F5F3
+    color: #F5F5F3;
+    font-family: 'Pragmatica';
 }
 .bottomnav a {
     font-size: .9em;
