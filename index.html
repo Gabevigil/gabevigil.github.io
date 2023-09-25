@@ -6,28 +6,90 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" type="image/png" href="icon.png" sizes="32x32">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Josefin+Sans&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="hero">
-			
+			<!-- BG VIDEO
 			<video autoplay loop muted play-inline class="back-video">
 				<source src="static.mp4" type="video/mp4">
 			</video>
-			
+			-->
 			<header>
-				<div id = "tabs">
-					<a href="index.html"><img id = "name" src="name.gif" alt="Gabe Vigil"></a>
-					<a href="socials.html"><img id = "socials" src="socials.gif" alt="To Social Media"><br></a>
-					<a href="about.html"><img id = "about" src="about.gif" alt="To About"></a>
+				<div class="wrapper">
+					<a href="index.html"><p id = "name" alt="Gabe Vigil">GABE VIGIL</p></a>
+					<!--<a href="socials.html"><img id = "socials" src="socials.gif" alt="To Social Media"><br></a>
+					<a href="about.html"><img id = "about" src="about.gif" alt="To About"></a>-->
+					<div class="topnav">
+  						<a class="active" href="home.html">HOME</a>
+  						<a href="about.html">ABOUT</a>
+						<a href="VFX.html">VFX</a>
+						<a href="edit.html">EDIT</a>
+						<a href="photo.html">PHOTO</a>
+						<a href="audio.html">AUDIO</a>
+						<a href="contact.html">CONTACT</a>
+					</div>
+					<hr color="black" size="1.5px" class="line" width="100%" />
 				</div>
 			</header>
 			<div id = "main">
-				<div class="parent">
+				<a href="vfx.html"><p class="title" id = "vfx" alt="VFX">AFTER EFFECTS COMPOSITING</p></a>
+				<div class="box1">
+					<a href="vfx.html"><video autoplay loop muted play-inline class="vidblock">
+						<source src="https://live.staticflickr.com/video/53210955607/5093e94b74/1080p.mp4?s=eyJpIjo1MzIxMDk1NTYwNywiZSI6MTY5NTYyNDEzOSwicyI6IjAzNWM4MDAzYjVlYzFlODg5Njg1MjUzNDBmMjM5MzYwZGU0NDg4MTYiLCJ2IjoxfQ" type="video/mp4">
+					</video></a>
+				</div>
+				<div class="box2">
+					<a href="edit.html"><p class="title" id = "edit" alt="VFX">VIDEO EDIT/DIRECTING</p></a>
+					<a href="edit.html"><video autoplay loop muted play-inline class="vidblock">
+						<source src="https://live.staticflickr.com/video/53211829641/3a7d38e149/1080p.mp4?s=eyJpIjo1MzIxMTgyOTY0MSwiZSI6MTY5NTYyNDI1OSwicyI6IjllNDE0NWJhYWMyNDAwMTk0MzJlYzkyYTc3MDZhYTJhOTA1NDZmZWMiLCJ2IjoxfQ" type="video/mp4">
+					</video></a>
+				</div>
+				<div class="box3">
+					<a href="photo.html"><p class="title" id = "photo" alt="photo">PHOTO</p></a>
+					<a href="photo.html"><video autoplay loop muted play-inline class="photoblock">
+						<source src="https://live.staticflickr.com/video/53211841116/3bd48c32c4/1080p.mp4?s=eyJpIjo1MzIxMTg0MTExNiwiZSI6MTY5NTYyNDM4MCwicyI6IjlhZmUyYmE3ZTRkOTczNjAwODA0Y2JhZGNmZTYzMTkyZjZmZDJmNGUiLCJ2IjoxfQ" type="video/mp4">
+					</video></a>
+				</div>
+				<div class="box4">
+					<a href="audio.html"><p class="title" id = "audio" alt="audio">AUDIO</p></a>
+					<a href="audio.html"><video autoplay loop muted play-inline class="audioblock">
+						<source src="https://live.staticflickr.com/video/53212221174/a5a104a0ab/360p.mp4?s=eyJpIjo1MzIxMjIyMTE3NCwiZSI6MTY5NTYyNDUxNywicyI6ImFhNmIxY2YzOTc4ZWQ0MDhkYzE0ZmQ0YTJiMTViNzU3YTk3NjViZmUiLCJ2IjoxfQ" type="video/mp4">
+					</video></a>
+				</div>
+				<!--<div class="parent">
 				<div class="iframe-container">
 
 					<iframe class="frame1"src="https://www.youtube.com/embed/f7yuVpoAC40?vq=hd1080&modestbranding=1&rel=0&color=white" width="560" height="315" title="Gabe Vigil VFX Reel 2022" frameborder="0" allowfullscreen></iframe>
 					<iframe class="frame2"src="https://www.youtube.com/embed/IG_2-axKUEc?si=Ap0As6vm7hnY4-3y?vq=hd1080&modestbranding=1&rel=0&color=white" width="560" height="315" title="Music Video" frameborder="0" allowfullscreen></iframe>
 					</div>
+					</div>
+				</div>-->
+			</div>
+			<div id = "footer">
+				<p id = "endname" alt="Gabe Vigil">GABE VIGIL</p>
+				<div class="bottomnav">
+					<div class="bn1">
+						<p class="bntitle">SITEMAP</p>
+						<div class="bn1s">
+			  				<a href="index.html">HOME</a>
+			  				<a href="about.html">ABOUT</a>
+							<a href="VFX.html">VFX</a>
+							<a href="about.html">EDIT</a>
+							<a href="photo.html">PHOTO</a>
+							<a href="audio.html">AUDIO</a>
+							<a href="contact.html">CONTACT</a>
+						</div>
+					</div>
+					<div class="bn2">
+						<p class="bntitle">FOLLOW</p>
+						<div class="bn2s">
+	  						<a href="https://www.instagram.com/luxecide">INSTAGRAM</a>
+	  						<a href="https://www.linkedin.com/in/gabe-vigil-32ab06264/">LINKEDIN</a>
+							<a href="https://www.youtube.com/@gabevigil">YOUTUBE</a>
+						</div>
 					</div>
 				</div>
 			</div>

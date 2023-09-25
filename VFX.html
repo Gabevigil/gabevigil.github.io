@@ -2,26 +2,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>About</title>
+		<title>VFX</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style2.css">
 		<link rel="icon" type="image/png" href="icon.png" sizes="32x32">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Josefin+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="flickity.css" media="screen">
 	</head>
 	<body>
 		<div class="hero">
 			
+			<video autoplay loop muted play-inline class="back-video">
+				<source src="vfx.mp4" type="video/mp4">
+			</video>
 			
 			<header>
 				<div class="wrapper">
 					<a href="index.html"><p id = "name" alt="Gabe Vigil">GABE VIGIL</p></a>
 					<div class="topnav">
   						<a href="index.html">HOME</a>
-  						<a class="active" href="about.html">ABOUT</a>
-						<a href="VFX.html">VFX</a>
+  						<a href="about.html">ABOUT</a>
+						<a class="active" href="VFX.html">VFX</a>
 						<a href="edit.html">EDIT</a>
 						<a href="photo.html">PHOTO</a>
 						<a href="audio.html">AUDIO</a>
@@ -31,16 +33,9 @@
 				</div>
 			</header>
 			<div id = "main">
-				<div id= "imagebox">
-				<img src="pfp1.jpg" id= "pfp">
-				</div>
-				<p class="title" id ="hitext" alt="Hi">Hi, I'm Gabe</p></a>
-				<div id= "textbox">
-					<p>I'm a newly graduated student from New York University where I received a BFA in Film and Television Production. </p>
-					<p>I have a deep passion for art, with a particular interest in surrealism in film and animation. I believe visual effects and 3D animation still have so much more potential to be used to push the medium to new artistic heights and ideas and I intend to be someone who adds to this progression of art. </p>
-					<p>Currently I specialize in After Effects compositing, but also have skills in video/photo editing, motion graphics, audio editing, audio tech, photo and videography, zBrush sculpting, and I’m currently learning Blender.</p>
-					<p>Feel free to reach out to me on the contact page.</p>
-					<br><br>
+				<a href="vfx.html"><p class="title" id ="maintext" alt="VFX Reel">VFX REEL</p></a>
+				<div class="vidbox">
+				<iframe class="vfxvid"src="https://www.youtube.com/embed/f7yuVpoAC40?vq=hd1080&modestbranding=1&rel=0&color=white" title="Gabe Vigil VFX Reel 2022" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<hr color="#F5F5F3" size="1.5px" class="line" width="100%" />
@@ -70,6 +65,5 @@
 				</div>
 			</div>
 		</div>
-	<script src="flickity.pkgd.min.js"></script>
 	</body>
 </html>

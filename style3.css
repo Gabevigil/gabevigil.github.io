@@ -12,11 +12,13 @@
     src: url(AktivGrotesk-Regular.otf) format("truetype");
 }
 @font-face {
+    font-family: "AktivThin";
+    src: url(AktivGrotesk-Thin.otf) format("truetype");
+}
+@font-face {
     font-family: "CourierStd";
     src: url(CourierStd.otf) format("truetype");
 }
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
 html {
     font-family: 'Pragmatica';
     /* background-color: black;*/
@@ -27,7 +29,7 @@ body {
 }*/
 
 body {
-    background-color: #F5F5F3;
+    background-color: #1C1C1D;
     animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -77,76 +79,117 @@ header {
     letter-spacing: -.17vw;
 }
 
-#vfx {
-    padding-bottom: 1.5em;
+.title2 {
+    font-family: 'Josefin Sans';
+    color: #1C1C1D;
+    font-size: 3vw;
+    letter-spacing: 0vw;
+}
+
+
+#maintext {
+    padding-bottom: .4em;
     float: left;
-    padding-top: 2.1em;
-    padding-left: 19vw;
+    padding-top: .5em;
+    padding-left: 8vw;
+    padding-right: 10vw;
 }
-#contacttext {
-    padding-bottom: 1.5em;
-    padding-top: 2.1em;
-    padding-left: 19vw;
+
+#nofloattext {
+    padding-bottom: 1.4em;
+    padding-top: 1em;
+    padding-left: 9.5vw;
+    padding-right: 10vw;
 }
-#edit {
-    padding-bottom: 1.5em;
-}
-#photo {
-    float: right;
-    padding-bottom: 1.3em;
-}
-#audio {
-    padding-bottom: 1.3em;
-    float: left;
-}
-.box1 {
-    width: 50%;
-    float: left;
-    padding-left: 7vw;
-}
-.box2 {
-    width: 49%;
-    float: right;
-    padding-right: 2em;
-    /*padding-top: 20em;*/
-    padding-top: 17vw;
-}
-.box3 {
-    width: 45%;
-    float: left;
-    padding-left: 17vw;
-    padding-top: 8.9vw;
-}
-.box4 {
-    width: 50%;
-    float: right;
-    padding-right: 0em;
-    /*padding-top: 20em;*/
-    padding-top: 4.5vw;
-    padding-bottom: 6vw ;
-}
+
 a:link{
   text-decoration: none!important;
 }
-#socials {
-    padding-top: 2.5%;
-    padding-right: 4.5%;
-    display: block;
-    float: right;
-}
 
-#socials2 {
-    padding-top: 2.5%;
-    padding-right: 4.5%;
-    display: block;
-    float: right;
-}
-
-#about {
+.contvid1 {
+    float: left;
+    padding-left: 8.5vw;
     position: relative;
-    padding-right: 4.5%;
-    display: block;
+    width: 52.5vw;
+    height: 31.7vw;
+    display: flex;
+    padding-top: 7vw;
+}
+
+#contitle1 {
+    float: left;
+    padding-left: 1.3vw;
+    padding-top: 11vw;
+    padding-right: 2vw;
+}
+
+.role {
+    float: left;
+    padding-top: 5vw;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    font-size: 1.3vw;
+    color: #1C1C1D;
+    font-family: 'AktivThin';
+}
+.desc {
+    display: flex;
+    float: left;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    font-size: 1.3vw;
+    color: #1C1C1D;
+    font-family: 'AktivThin';
+    width: 40vw;
+}
+
+.contvid2 {
     float: right;
+
+    padding-right: 7vw ;
+    position: relative;
+    width: 51vw;
+    height: 33.75vw;
+    display: flex;
+    padding-top: 9vw;
+}
+
+#contitle2 {
+    float: right;
+    padding-left: 1.3vw;
+    padding-top: 12vw;
+    padding-right: 2vw;
+}
+
+#contitle3 {
+    float: left;
+    padding-left: 1.3vw;
+    padding-top: .3vw;
+    padding-right: 20vw;
+}
+
+.role2 {
+    float: right;
+    padding-top: 5vw;
+    padding-left: 15vw;
+    padding-right: 2vw;
+    font-size: 1.3vw;
+    color: ##1C1C1D;
+    font-family: 'AktivThin';
+}
+.desc2 {
+    float: right;
+    padding-top: 5vw;
+    padding-bottom: 12vw;
+    padding-left: 10vw;
+    padding-right: 2vw;
+    font-size: 1.3vw;
+    color: #1C1C1D;
+    font-family: 'AktivThin';
+    width: 40vw;
+    text-align: right;
 }
 
 .topnav {
@@ -161,10 +204,18 @@ a:link{
     letter-spacing: .01em;
     font-size: .9em;
 }
+.vfxvid {
+    position: relative;
+    width: 77vw;
+    height: 48.3vw;
+    display: flex;
+    margin: auto;
+    padding-bottom: 5vw;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: black;
+    color: #1C1C1D;
     text-align: center;
     padding: 10px 11px;
     text-decoration: none;
@@ -285,15 +336,16 @@ h1 {
     display: flex;
     text-align: center;
 }
+/*
 #buttonbox {
     display: flex;
     text-align: center;
     margin-right: 18%;
     margin-left: 18%;
+    margin-top: 8%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15vw;
 }
 #buttonbox p {
     cursor: auto;
@@ -304,13 +356,13 @@ h1 {
     white-space: nowrap;
     background: rgba(100%,100%,100%,0);
     border-radius: 0px;
-    border: 1px solid black;
-    border-width: .2vw .2vw .2vw .2vw;
+    border: 1px solid #ffffff;
+    border-width: 1px 1px 1px 1px;
     padding: 9px 9px 9px 9px;
-    color: black;
-    font-size: 2vw;
-    margin: 1.5vw;
-    font-family: "Pragmatica";
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    font-family: Josefin Sans;
     text-align: center;
 }
 #fbutton {
@@ -322,13 +374,13 @@ h1 {
     white-space: nowrap;
     background: rgba(100%,100%,100%,0);
     border-radius: 0px;
-    border: 1px solid black;
-    border-width: .2vw .2vw .2vw .2vw;
+    border: 1px solid #ffffff;
+    border-width: 1px 1px 1px 1px;
     padding: 9px 9px 9px 9px;
-    color: black;
-    font-size: 2vw;
-    margin: 1.5vw;
-    font-family: "Pragmatica";
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    font-family: Josefin Sans;
     text-align: center;
 }
 #fbutton:hover {
@@ -336,7 +388,7 @@ h1 {
 }
 #fbutton:hover:after{
     content: attr(data-hover);
-    font-size: 2vw;
+    font-size: 18px;
 }
 
 button {
@@ -347,19 +399,23 @@ button {
     white-space: nowrap;
     background: rgba(100%,100%,100%,0);
     border-radius: 0px;
-    border: 1px solid black;
-    border-width: .2vw .2vw .2vw .2vw;
-    padding: .9vw .9vw .9vw .9vw;
-    color: black;
-    font-size: 2vw;
-    margin: 1.5vw;
-    font-family: "Pragmatica";
+    border: 1px solid #ffffff;
+    border-width: 1px 1px 1px 1px;
+    padding: 9px 9px 9px 9px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    font-family: Josefin Sans;
     text-align: center;
 }
+
+*/
+
 #main div {
    
 }
 #textbox p {
+    margin-bottom: 18px;
     text-align: left;
 }
 #pfp {
@@ -434,9 +490,14 @@ main {
 }*/
 .back-video {
     position: fixed;
-    right: 0; 
+    right: 0;
+    left: 0; 
     bottom: 0;
     z-index: -1;
+    align-self: ;
+    width: 100%;
+    filter: blur(20px);
+
 }
 .vidblock {
     width: 40vw;
@@ -521,3 +582,83 @@ main {
     text-decoration: underline;
     font-family: 'CourierStd';
 }
+/* Flickity stuff */
+
+#gallery1 {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 4vw;
+}
+.flickity-viewport {
+    background-color: black;
+}
+
+.previous {
+    margin-left: 6.5vw;
+    top: 40%!important;
+}
+
+.next {
+    margin-right: 6.5vw;
+    top: 40%!important;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+.carousel-cell {
+  width: 55%;
+  height: 30vw;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.carousel-cell.horizontal.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+          width: 80vw;
+}
+
+.horizontal.is-selected img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            margin: 1vw;
+}
+
+@media screen and ( min-width: 768px ) {
+  
